@@ -3,12 +3,14 @@ body{
 
     #tit{
         color: blue;
-        padding-bottom: 2%;
-        padding-top: 3%;
+        padding-bottom: 4%;
+        padding-top: 7%;
     }
 
     .text-center{
-        padding-bottom: 2%;
+        padding-bottom: 3%;
+        height: auto;
+        width: auto;
     }
 }
 
@@ -18,4 +20,16 @@ body{
     margin: 0 auto;
     max-width: 100%;
     width: 80%;
+}
+
+.butheader{
+    text-align: right;
+}
+
+.textinicio{
+    color: blue;
+}
+
+.row{
+    @extend #tit;
 }

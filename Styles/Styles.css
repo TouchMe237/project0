@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+}
+
+body #tit, body .row {
+  color: blue;
+  padding-bottom: 4%;
+  padding-top: 7%;
+}
+
+body .text-center {
+  padding-bottom: 3%;
+  height: auto;
+  width: auto;
+}
+
+.map {
+  padding-bottom: 2%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+}
+
+.butheader {
+  text-align: right;
+}
+
+.textinicio {
+  color: blue;
+}
+/*# sourceMappingURL=Styles.css.map */
