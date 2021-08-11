@@ -1,0 +1,37 @@
+$color-azul: blue;
+
+body{
+    background-color: black !important;
+
+    #tit{
+        color:$color-azul;
+        padding-bottom: 4%;
+        padding-top: 7%;
+    }
+
+    .text-center{
+        padding-bottom: 3%;
+        height: auto;
+        width: auto;
+    }
+}
+
+.map{
+    padding-bottom: 2%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+}
+
+.textinicio{
+    color: $color-azul;
+}
+
+.row{
+    @extend #tit;
+}
+
+ul{
+   padding-bottom: 50%;
+}
