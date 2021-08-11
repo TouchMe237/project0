@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: black !important;
 }
 
 body #tit, body .row {
@@ -22,11 +22,11 @@ body .text-center {
   width: 80%;
 }
 
-.butheader {
-  text-align: right;
-}
-
 .textinicio {
   color: blue;
+}
+
+ul {
+  padding-bottom: 50%;
 }
 /*# sourceMappingURL=Styles.css.map */
