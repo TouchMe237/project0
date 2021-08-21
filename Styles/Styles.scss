@@ -1,37 +1,290 @@
 $color-azul: blue;
+$color-bl: white;
+$color-b: black;
+
+@media screen and (max-width: 600px) {
+    #lol{display:block;}
+    #tit{display: none;}
+}
+
+@media screen and (min-width: 601px) {
+    #lol{display:none;}
+    #tit{display: block;}
+}
+
+@media screen and (min-width: 601px) {
+    body{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    body{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        .img-fluid1{
+            margin-bottom: 13%;
+        }
+    }
+}
+
+@media (min-width: 601px){
+    body{
+        .textinicio{
+            margin-bottom: 20%;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        .textcamp{
+            margin-top: 20%;
+        }
+    }
+}
+
+@media (min-width: 601px){
+    body{
+        .textcamp{
+            margin-top: 11%;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        #map{
+            .color{
+                margin-top: 15%;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px){
+    body{
+        #map{
+            .color{
+                margin-top: 7%;
+            }
+        }
+    }
+}
 
 body{
-    background-color: black !important;
+    background-color: $color-bl !important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
 
     #tit{
         color:$color-azul;
-        padding-bottom: 4%;
-        padding-top: 7%;
+        margin-bottom: 4%;
+        margin-top: 10%;
     }
+
+    #lol{
+        color:$color-azul;
+
+    }
+
+    .textinicio{
+        color: $color-azul;
+        font-family: Brush Script MT,cursive; 
+        font-size: 150%;
+        margin-top: 3%;
+        
+    }
+
+    .textcamp{
+        color: $color-azul;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        font-size: 150%;
+    }
+
+    Table{
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+
+        td{
+            border: 1px solid $color-b;
+            border-collapse: collapse;
+        }
+    }
+}
+
+footer{
+
+    background-color: $color-b;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
 
     .text-center{
-        padding-bottom: 3%;
-        height: auto;
-        width: auto;
+        color: $color-bl;
+    }
+    
+    .text-center2{
+        color: $color-bl;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .social_footer_ul {
+        display:table; 
+        margin:15px auto 0 auto; 
+        list-style-type:none;  
+    }
+
+    .social_footer_ul li { 
+        padding-left:20px; 
+        padding-top:10px; 
+        float:left; 
+    }
+
+    .social_footer_ul li a { 
+        color:#CCC; 
+        border:1px solid #CCC; 
+        padding:8px;border-radius:50%;
+    }
+
+    .social_footer_ul li i {  
+        width:20px; 
+        height:20px; 
     }
 }
 
-.map{
-    padding-bottom: 2%;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 80%;
+.list-group-item{
+    color:$color-azul;
+    margin-bottom: 4%;
+    margin-top: 5%;
+    height: 10%;
+    background-color: white;
+    font-size: 200%;
+    font-family: Brush Script MT,cursive; 
 }
 
-.textinicio{
-    color: $color-azul;
+.table{
+    margin-top: 5%;
 }
 
-.row{
-    @extend #tit;
+.imgtable{
+    width: 100%;
+    margin-top: 20%;
 }
 
-ul{
-   padding-bottom: 50%;
+#map{
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+}
+
+.color{
+    color:$color-azul;
+}
+
+#mundo{
+    @extend #map;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+.img-fluid1{
+    width: 65%;
+    height: auto;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 601px) {
+    .img-fluid{
+        width: 13%;
+        height: 5%;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .img-fluid1{
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #lol{
+        margin-top: 18%;
+        margin-bottom: -5%;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    #lol{
+        margin-top: 15%;
+        margin-bottom: 1%;
+    }
+}
+
+.btn-group-vertical{
+    background-color: aqua;
+}
+
+#f2c1{
+    background-color: antiquewhite;
+    color: aqua;
+    border-radius: 25%;
+}
+
+.btn-group-vertical{
+    margin-bottom: 16%;
+    border-radius: 3%;
+}
+
+#dema{
+    background-color: $color-bl;
+}
+
+#nox{
+    background-color: red;
+    color: $color-bl;
+}
+
+#jon{
+    background-color: gray;
+    color: $color-bl;
+}
+
+#frel{
+    background-color: $color-azul;
+    color: $color-bl;
+}
+
+#shur{
+    background-color: yellow;
+}
+
+#pil{
+    background-color: green;
+    color: gold;
+}
+
+#agu{
+    background-color: aquamarine;
+}
+
+#mon{
+    background-color: cadetblue;
+    color: $color-bl;
+}
+
+#som{
+    background-color: $color-b;
+    color: $color-bl;
 }
